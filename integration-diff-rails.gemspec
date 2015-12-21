@@ -18,4 +18,5 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "faraday"
+  s.add_dependency 'celluloid'
 end
