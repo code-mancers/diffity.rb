@@ -2,6 +2,7 @@ require 'faraday'
 require 'integration_diff_rails/dummy_runner'
 require 'integration_diff_rails/runner'
 require 'integration_diff_rails/dsl'
+require 'integration_diff_rails/upload_image_service'
 
 module IntegrationDiffRails
   # configure domain to which all images have to be uploaded.
