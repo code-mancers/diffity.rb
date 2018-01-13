@@ -1,12 +1,12 @@
 require 'faraday'
-require 'integration_diff/dummy_runner'
-require 'integration_diff/runner'
-require 'integration_diff/dsl'
+require 'diffity/dummy_runner'
+require 'diffity/runner'
+require 'diffity/dsl'
 require 'logger'
 
-module IntegrationDiff
+module Diffity
   # configure domain to which all images have to be uploaded.
-  @@base_uri = "https://diff.codemancers.com"
+  @@base_uri = "http://diffity.com"
   def self.base_uri=(uri)
     @@base_uri = uri
   end
@@ -67,11 +67,11 @@ module IntegrationDiff
 
   # helps in setting up the run
   def self.start_run
-    IntegrationDiff::Dsl.idiff.start_run
+    Diffity::Dsl.diffity.start_run
   end
 
   # helps in wrapping up run by uploading images
   def self.wrap_run
-    IntegrationDiff::Dsl.idiff.wrap_run
+    Diffity::Dsl.diffity.wrap_run
   end
 end

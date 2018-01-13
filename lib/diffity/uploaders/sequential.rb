@@ -1,6 +1,6 @@
-require 'integration_diff/utils'
+require 'diffity/utils'
 
-module IntegrationDiff
+module Diffity
   module Uploaders
     class Sequential
       def initialize(run_id)
@@ -18,7 +18,7 @@ module IntegrationDiff
       def wrapup
         @identifiers_with_env
           .each do |identifier, browser, device, os, browser_version, device_name, os_version|
-          IntegrationDiff::Utils
+          Diffity::Utils
             .upload_image(@run_id, identifier, browser, device, os,
                           browser_version, device_name, os_version)
         end

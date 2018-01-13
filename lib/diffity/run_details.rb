@@ -1,4 +1,4 @@
-module IntegrationDiff
+module Diffity
   class RunDetails
     class Jenkins
       def branch

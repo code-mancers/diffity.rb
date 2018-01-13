@@ -1,17 +1,17 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "integration_diff/version"
+require "diffity/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "integration-diff"
-  s.version     = IntegrationDiff::VERSION
+  s.name        = "diffity"
+  s.version     = Diffity::VERSION
   s.authors     = ["Yuva"]
   s.email       = ["yuva@codemancers.com"]
-  s.homepage    = "http://diff.codemancers.com"
-  s.summary     = "Rails integration for integration diff service"
-  s.description = "Rails integration for integration diff service"
+  s.homepage    = "http://diffity.com"
+  s.summary     = "Rails integration for diffity service"
+  s.description = "Rails integration for diffity service"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "Readme.md"]

@@ -1,4 +1,4 @@
-module IntegrationDiff
+module Diffity
   class DummyRunner
     def self.instance
       @runner ||= DummyRunner.new

@@ -1,6 +1,6 @@
-require 'integration_diff/utils'
+require 'diffity/utils'
 
-module IntegrationDiff
+module Diffity
   module Uploaders
     class Concurrent
       MAX_NO_OF_THREADS = 20
@@ -16,7 +16,7 @@ module IntegrationDiff
         @screenshots_taken += 1
 
         @pool.post do
-          IntegrationDiff::Utils
+          Diffity::Utils
             .upload_image(@run_id, identifier, browser, device, os,
                           browser_version, device_name, os_version)
         end
